@@ -68,7 +68,7 @@ namespace MyShop.DataAccess.InMemory
 
         public void Delete(string Id)
         {
-            Product productToDelete = products.Find(p => p.Id == product.Id);
+            Product productToDelete = products.Find(p => p.Id == Id);
 
             if (productToDelete != null)
             {
